@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+  </head>
+  <body>
+    <div>
+      <h1>Очки</h1>
+      <h1 class="summa">100</h1>
+    </div>
+    <div style="display: block" class="brendi">
+      <div class="yandex" style="height: 200px; width: 300px; background-size: 100% 100%; position: absolute; background-image: url(yandex.png);">
+      </div>
+       <div class="google" style="height: 200px; width: 300px; background-size: 100% 100%; position: absolute; background-image: url(google.jpg); margin-left: 300px; margin-top: 400px;">
+      </div>
+       <div class="twitter" style="height: 200px; width: 300px; background-size: 100% 100%; position: absolute; background-image: url(twitter.png); margin-left: 700px; margin-top: 200px;">
+      </div>
+      <div class="vk" style="height: 200px; width: 300px; background-size: 100% 100%; position: absolute; background-image: url(vk.png); margin-left: 200px; margin-top: 200px;">
+      </div>
+      <div class="facebook" style="height: 200px; width: 300px; background-size: 100% 100%; position: absolute; background-image: url(facebook.png); margin-left: 900px; margin-top: -50px;">
+      </div>
+      <div class="reddit" style="height: 200px; width: 300px; background-size: 100% 100%; position: absolute; background-image: url(reddit.jpg); margin-left: 1200px; margin-top: 400px;">
+      </div>
+      <div class="disney" style="height: 200px; width: 300px; background-size: 100% 100%; position: absolute; background-image: url(disney.png); margin-left: 1100px; margin-top: 200px;">
+      </div>
+        <div class="ask" style="position: absolute; margin-left: 500px; margin-top: 100px">
+          <h1 class="">Где спрятан гугл</h1>
+        </div>
+        <div class="cong" style="position: absolute; margin-left: 800px; margin-top:140px; display: none">
+      <h1 class="text-success">owo </h1>
+    </div>
+    </div>
+    <div style="display: none" class="zhivotnie">
+    <div class="antilop" style="background-image: url(Antilop.jpg); width: 300px; height: 200px; background-size: 100% 100%; position: absolute;">
+    </div>
+    <div class="begemot" style="background-image: url(begemot.jpg); width: 300px; height: 200px; background-size: 100% 100%; position: absolute; margin-left: 300px; margin-top:500px;">
+    </div>
+    <div class="nosorog" style="background-image: url(nosorog.jpg); width: 300px; height: 200px; background-size: 100% 100%; position: absolute; margin-left: 700px; margin-top:200px;">
+    </div>
+     <div class="elephant" style="background-image: url(elephant.jpg); width: 300px; height: 200px; background-size: 100% 100%; position: absolute; margin-left: 1100px; margin-top:100px;">
+    </div>
+    <div class="giena" style="background-image: url(giena.jpg); width: 300px; height: 200px; background-size: 100% 100%; position: absolute; margin-left: 380px; margin-top:50px;">
+    </div>
+    <div class="jiraf" style="background-image: url(jiraf.jpg); width: 300px; height: 200px; background-size: 100% 100%; position: absolute; margin-left: 700px; margin-top:500px;">
+    </div>
+    <div class="zebra" style="background-image: url(zebra.jpg); width: 300px; height: 200px; background-size: 100% 100%; position: absolute; margin-left: 0px; margin-top:290px;">
+    </div>
+    <div class="korova" style="background-image: url(korova.jpg); width: 300px; height: 200px; background-size: 100% 100%; position: absolute; margin-left: 1100px; margin-top:400px;">
+    </div>
+    <div class="lion" style="background-image: url(lion.jpg); width: 300px; height: 200px; background-size: 100% 100%; position: absolute; margin-left: 700px; margin-top:-50px;">
+    </div>
+    <div class="ask" style="position: absolute; margin-left: 500px; margin-top: 0px;">
+      <h1 class="">Где спрятан лев?</h1>
+    </div>
+    <div class="cong" style="position: absolute; margin-left: 800px; margin-top:140px; display: none">
+      <h1 class="text-success">owo </h1>
+    </div>
+</div>
+
+    <script>
+       let point = 100;
+        let timer = function(){
+          document.querySelector(".twitter").style.background = "black"
+          document.querySelector(".vk").style.background = "black"
+          document.querySelector(".disney").style.background = "black"
+          document.querySelector(".yandex").style.background = "black"
+          document.querySelector(".google").style.background = "black"
+          document.querySelector(".reddit").style.background = "black"
+          document.querySelector(".facebook").style.background = "black"
+        }
+        setTimeout(timer, 2000);
+        let timerend = function(){
+          document.querySelector(".brendi").style.display = "none"
+          document.querySelector(".zhivotnie").style.display = "block"
+         
+        }
+        setTimeout(timerend, 10000);
+
+        document.querySelector(".twitter").onclick = function(){
+              document.querySelector(".twitter").style.backgroundImage = "url(twitter.png)"
+              document.querySelector(".twitter").style.backgroundSize = "100% 100%"
+              point = point - 10
+              document.querySelector(".summa").innerHTML = point
+          }
+          document.querySelector(".vk").onclick = function(){
+              document.querySelector(".vk").style.backgroundImage = "url(vk.png)"
+              document.querySelector(".vk").style.backgroundSize = "100% 100%"
+              point = point - 10
+              document.querySelector(".summa").innerHTML = point
+          }
+          document.querySelector(".disney").onclick = function(){
+              document.querySelector(".disney").style.backgroundImage = "url(disney.png)"
+              document.querySelector(".disney").style.backgroundSize = "100% 100%"
+              point = point - 10
+              document.querySelector(".summa").innerHTML = point
+          }
+          document.querySelector(".facebook").onclick = function(){
+              document.querySelector(".facebook").style.backgroundImage = "url(facebook.png)"
+              document.querySelector(".facebook").style.backgroundSize = "100% 100%"
+              point = point - 10
+              document.querySelector(".summa").innerHTML = point
+          }
+          document.querySelector(".yandex").onclick = function(){
+              document.querySelector(".yandex").style.backgroundImage = "url(yandex.png)"
+              document.querySelector(".yandex").style.backgroundSize = "100% 100%"
+              point = point - 10
+              document.querySelector(".summa").innerHTML = point
+          }
+          document.querySelector(".reddit").onclick = function(){
+              document.querySelector(".reddit").style.backgroundImage = "url(reddit.jpg)"
+              document.querySelector(".reddit").style.backgroundSize = "100% 100%"
+              point = point - 10
+              document.querySelector(".summa").innerHTML = point
+          }
+          document.querySelector(".google").onclick = function(){
+              document.querySelector(".google").style.backgroundImage = "url(google.jpg)"
+              document.querySelector(".google").style.backgroundSize = "100% 100%"
+              point = point + 100
+              document.querySelector(".summa").innerHTML = point
+              document.querySelector(".ask").style.display = "none"
+              document.querySelector(".cong").style.display = "block"
+              document.querySelector(".brendi").style.display = "none"
+          document.querySelector(".zhivotnie").style.display = "block"
+
+          }
+          let timerzhi = function(){
+          document.querySelector(".antilop").style.background = "black"
+          document.querySelector(".begemot").style.background = "black"
+          document.querySelector(".lion").style.background = "black"
+          document.querySelector(".jiraf").style.background = "black"
+          document.querySelector(".giena").style.background = "black"
+          document.querySelector(".nosorog").style.background = "black"
+          document.querySelector(".elephant").style.background = "black"
+          document.querySelector(".zebra").style.background = "black"
+          document.querySelector(".korova").style.background = "black"
+        }
+        setTimeout(timerzhi, 2000);
+          document.querySelector(".antilop").onclick = function(){
+              document.querySelector(".antilop").style.backgroundImage = "url(antilop.jpg)"
+              document.querySelector(".antilop").style.backgroundSize = "100% 100%"
+              point = point - 10
+              document.querySelector(".summa").innerHTML = point
+          }
+          document.querySelector(".begemot").onclick = function(){
+              document.querySelector(".begemot").style.backgroundImage = "url(begemot.jpg)"
+              document.querySelector(".begemot").style.backgroundSize = "100% 100%"
+              point = point - 10
+              document.querySelector(".summa").innerHTML = point
+          }
+          document.querySelector(".lion").onclick = function(){
+              document.querySelector(".lion").style.backgroundImage = "url(lion.jpg)"
+              document.querySelector(".lion").style.backgroundSize = "100% 100%"
+              document.querySelector(".ask").style.display = "none"
+              document.querySelector(".cong").style.display = "block"
+              point = point + 100
+              document.querySelector(".summa").innerHTML = point
+
+
+              document.querySelector(".antilop").style.backgroundImage = "url(antilop.jpg)"
+              document.querySelector(".antilop").style.backgroundSize = "100% 100%"
+              document.querySelector(".begemot").style.backgroundImage = "url(begemot.jpg)"
+              document.querySelector(".begemot").style.backgroundSize = "100% 100%"
+              document.querySelector(".jiraf").style.backgroundImage = "url(jiraf.jpg)"
+              document.querySelector(".jiraf").style.backgroundSize = "100% 100%"
+              document.querySelector(".giena").style.backgroundImage = "url(giena.jpg)"
+              document.querySelector(".giena").style.backgroundSize = "100% 100%"
+              document.querySelector(".nosorog").style.backgroundImage = "url(nosorog.jpg)"
+              document.querySelector(".nosorog").style.backgroundSize = "100% 100%"
+              document.querySelector(".elephant").style.backgroundImage = "url(elephant.jpg)"
+              document.querySelector(".elephant").style.backgroundSize = "100% 100%"
+              document.querySelector(".zebra").style.backgroundImage = "url(zebra.jpg)"
+              document.querySelector(".zebra").style.backgroundSize = "100% 100%"
+              document.querySelector(".korova").style.backgroundImage = "url(korova.jpg)"
+              document.querySelector(".korova").style.backgroundSize = "100% 100%"
+
+
+
+          }
+          document.querySelector(".jiraf").onclick = function(){
+              document.querySelector(".jiraf").style.backgroundImage = "url(jiraf.jpg)"
+              document.querySelector(".jiraf").style.backgroundSize = "100% 100%"
+              point = point - 10
+              document.querySelector(".summa").innerHTML = point
+
+          }
+          document.querySelector(".giena").onclick = function(){
+              document.querySelector(".giena").style.backgroundImage = "url(giena.jpg)"
+              document.querySelector(".giena").style.backgroundSize = "100% 100%"
+              point = point - 10
+              document.querySelector(".summa").innerHTML = point
+          }
+          document.querySelector(".nosorog").onclick = function(){
+              document.querySelector(".nosorog").style.backgroundImage = "url(nosorog.jpg)"
+              document.querySelector(".nosorog").style.backgroundSize = "100% 100%"
+              point = point - 10
+              document.querySelector(".summa").innerHTML = point
+          }
+          document.querySelector(".elephant").onclick = function(){
+              document.querySelector(".elephant").style.backgroundImage = "url(elephant.jpg)"
+              document.querySelector(".elephant").style.backgroundSize = "100% 100%"
+              point = point - 10
+              document.querySelector(".summa").innerHTML = point
+          }
+          document.querySelector(".zebra").onclick = function(){
+              document.querySelector(".zebra").style.backgroundImage = "url(zebra.jpg)"
+              document.querySelector(".zebra").style.backgroundSize = "100% 100%"
+              point = point - 10
+              document.querySelector(".summa").innerHTML = point
+          }
+          document.querySelector(".korova").onclick = function(){
+              document.querySelector(".korova").style.backgroundImage = "url(korova.jpg)"
+              document.querySelector(".korova").style.backgroundSize = "100% 100%"
+              point = point - 10
+              document.querySelector(".summa").innerHTML = point
+          }
+    </script>
+  </body>
+</html>
